@@ -216,6 +216,85 @@ header{
    }
 
 }
+/* features-section related styles */
+.features{
+    gap:100px;
+    align-items: center;
+   
+}
+
+#features-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+     
+}
+.feature-card{
+    width:344px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 30px 0 rgba(0,0,0, 0.06);
+    
+    
+}
+.feature-title{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.feature-description{
+    margin: 0;
+    
+}
+ .features-container,.feature-img{
+    width:100%;
+}
+.feature-img img{
+    width:100%;
+}
+
+.experience-badge{
+    padding:30px 28px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: -62px;
+    margin-top: -52px;
+}
+#experience-year{
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* responsive media query */
+@media screen and (max-width:576.36px) {
+    .features{
+        flex-direction: column;
+        gap:50px;
+        
+    }
+   
+    .feature-card{
+        width:auto;
+    }
+    .features-container,.feature-img{
+        width:auto;
+    }
+    .feature-img {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .experience-badge{
+        font-size: 0.8rem;
+        padding: 15px 20px;
+        margin:20px 0;
+    }
+   #experience-year{
+    font-size: 1.5rem;
+   }
+
+}
 
 /* fact-section code */
 .some-fact{
@@ -303,7 +382,7 @@ header{
 .sponsor-companies{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    justify-items: center;
+    
     gap:100px;
 }
 .sponsor-companies img{
@@ -316,7 +395,9 @@ header{
 @media screen and (max-width:576.36px) {
     .sponsor-companies{
         grid-template-columns: 1fr;
-        gap:70px;
+        justify-items: center;
+        gap:50px;
+        
     }
     .sponsor-companies img{
         width:auto;
@@ -329,10 +410,38 @@ header{
     .sponsor-companies{
           grid-template-columns:repeat(2,1fr);
           gap:50px;
+          justify-items: center;
          
     }
     .sponsor-companies img{
         width:auto;
         height: auto;
+    }
+}
+
+/* footer related styles */
+.footer-part{
+    max-width:950px;
+    background-color: #FFF4E7;
+    margin:87px auto 145px;
+    border-radius: 5px;
+    
+    
+}
+.footer-title{
+    color:#424242;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 18px 0px;
+}
+
+/* responsive media query */
+
+@media screen and (max-width:576.36px) {
+    .footer-part{
+        width:auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px;
     }
 }
